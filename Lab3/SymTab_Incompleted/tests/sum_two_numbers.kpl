@@ -1,0 +1,28 @@
+PROGRAM SUMTWONUMBERS;
+
+VAR A : INTEGER;
+    B : INTEGER;
+    SUM : INTEGER;
+
+FUNCTION ADD(X : INTEGER; Y : INTEGER) : INTEGER;
+BEGIN
+    ADD := X + Y
+END;
+
+BEGIN
+    CALL WRITELN;
+    
+    (* Nhap so thu nhat *)
+    A := READI;
+    
+    (* Nhap so thu hai *)
+    B := READI;
+    
+    (* Tinh tong *)
+    SUM := ADD(A, B);
+    
+    (* In ket qua *)
+    CALL WRITELN;
+    CALL WRITEI(SUM);
+    CALL WRITELN
+END.

@@ -1,0 +1,9 @@
+PROGRAM ERRORFORCHAR;
+VAR C : CHAR;
+    I : INTEGER;
+BEGIN
+I := 0;
+(* Loi: Bien dieu khien FOR phai la INTEGER, khong phai CHAR *)
+FOR C := 'a' TO 'z' DO
+  I := I + 1;
+END.

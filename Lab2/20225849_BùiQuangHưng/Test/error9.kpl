@@ -1,0 +1,8 @@
+(* Test ERR_INVALIDPARAM - parameter không hợp lệ *)
+Program Error9;
+Function F(123 : Integer) : Integer;
+Begin
+  F := 1;
+End;
+Begin
+End.

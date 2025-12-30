@@ -1,0 +1,5 @@
+(* Test ERR_IDENT_TOO_LONG - identifier quá dài >15 ký tự *)
+Program Error2;
+Var thisIsAVeryLongIdentifierNameThatExceeds : Integer;
+Begin
+End.

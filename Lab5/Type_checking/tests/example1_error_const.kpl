@@ -1,0 +1,8 @@
+PROGRAM EXAMPLE1ERROR;
+(* Dựa trên Example1 - Lỗi: Không tương ứng kiểu khi khai báo hằng *)
+CONST X = +'A';
+      Y = -'B';
+VAR A : INTEGER;
+BEGIN
+  A := 10;
+END.

@@ -1,0 +1,6 @@
+(* Test ERR_INVALIDCHARCONSTANT - char constant không hợp lệ *)
+Program Error4;
+Var c : Char;
+Begin
+  c := 'abc';
+End.

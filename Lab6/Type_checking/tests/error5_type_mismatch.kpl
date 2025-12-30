@@ -1,0 +1,15 @@
+PROGRAM ERROR5;
+(* Test case: Type mismatch between formal and actual parameters *)
+VAR X:INTEGER;  
+    C:CHAR;
+
+PROCEDURE INTPARAM(N:INTEGER);
+BEGIN
+  X := N
+END;
+
+BEGIN
+  X := 10;
+  C := 'A';
+  CALL INTPARAM(C)  (* Error: procedure expects INTEGER but CHAR is provided *)
+END.

@@ -1,0 +1,6 @@
+(* Test ERR_INVALIDCOMPARATOR - comparator không hợp lệ *)
+Program Error12;
+Var x : Integer;
+Begin
+  If x := 0 Then x := 1;
+End.

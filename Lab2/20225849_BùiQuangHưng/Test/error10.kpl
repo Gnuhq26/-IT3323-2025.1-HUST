@@ -1,0 +1,5 @@
+(* Test ERR_INVALIDSTATEMENT - statement không hợp lệ *)
+Program Error10;
+Begin
+  123;
+End.

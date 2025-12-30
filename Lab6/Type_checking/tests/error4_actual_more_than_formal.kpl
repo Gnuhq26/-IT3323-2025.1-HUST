@@ -1,0 +1,17 @@
+PROGRAM ERROR4;
+(* Test case: Actual parameter list has more elements than formal parameter list *)
+VAR X:INTEGER;  
+    Y:INTEGER;  
+    Z:INTEGER;
+
+PROCEDURE ONEPARAM(A:INTEGER);
+BEGIN
+  X := A
+END;
+
+BEGIN
+  X := 10;
+  Y := 20;
+  Z := 30;
+  CALL ONEPARAM(X, Y, Z)  (* Error: procedure expects 1 parameter but 3 arguments are provided *)
+END.

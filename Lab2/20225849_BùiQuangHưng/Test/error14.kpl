@@ -1,0 +1,6 @@
+(* Test ERR_INVALIDTERM - term không hợp lệ *)
+Program Error14;
+Var x : Integer;
+Begin
+  x := 10 * Begin;
+End.

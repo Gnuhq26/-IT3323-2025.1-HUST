@@ -1,0 +1,14 @@
+PROGRAM ERROR6;
+(* Test case: Passing a constant identifier as a reference parameter *)
+CONST FIVE = 5;
+VAR X:INTEGER;
+
+PROCEDURE REFPARAM(VAR N:INTEGER);
+BEGIN
+  N := N + 1
+END;
+
+BEGIN
+  X := 10;
+  CALL REFPARAM(FIVE)  (* Error: cannot pass constant as reference parameter *)
+END.

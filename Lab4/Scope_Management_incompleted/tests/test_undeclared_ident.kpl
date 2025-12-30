@@ -1,0 +1,6 @@
+PROGRAM TESTERR1;
+VAR X : INTEGER;
+
+BEGIN
+  X := Y + 1
+END.

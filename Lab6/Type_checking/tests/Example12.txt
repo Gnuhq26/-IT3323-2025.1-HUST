@@ -1,0 +1,10 @@
+PROGRAM EXAMPLE12;    
+VAR A : INTEGER;
+B:INTEGER;
+C:INTEGER;
+BEGIN
+A:=10;
+C:=0;
+FOR B:=1 to A do
+if B/2*2 !=0 then C:=C+B;
+END.

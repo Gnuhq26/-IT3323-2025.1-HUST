@@ -1,0 +1,4 @@
+(* Test ERR_END_OF_COMMENT - comment không đóng
+Program Error1;
+Begin
+End.

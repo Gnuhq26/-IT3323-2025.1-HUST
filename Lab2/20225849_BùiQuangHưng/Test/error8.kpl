@@ -1,0 +1,8 @@
+(* Test ERR_INVALIDBASICTYPE - basic type không hợp lệ cho function *)
+Program Error8;
+Function F : String;
+Begin
+  F := 1;
+End;
+Begin
+End.

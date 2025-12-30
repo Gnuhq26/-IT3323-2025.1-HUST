@@ -1,0 +1,13 @@
+PROGRAM ERROR1;
+(* Test case: Empty formal parameter list, non-empty actual parameter list *)
+VAR X:INTEGER;
+
+PROCEDURE NOPARAMS;
+BEGIN
+  X := 5
+END;
+
+BEGIN
+  X := 10;
+  CALL NOPARAMS(X)  (* Error: procedure has no parameters but 1 argument is provided *)
+END.

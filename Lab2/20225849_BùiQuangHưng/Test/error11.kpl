@@ -1,0 +1,5 @@
+(* Test ERR_INVALIDARGUMENTS - arguments không hợp lệ *)
+Program Error11;
+Begin
+  Call WriteI(@);
+End.

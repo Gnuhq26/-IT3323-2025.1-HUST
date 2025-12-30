@@ -1,0 +1,20 @@
+PROGRAM EXAMPLE2ERROR;
+(* Dựa trên Example2 - Lỗi: Biểu thức bắt đầu bằng + với kiểu ký tự *)
+VAR N : INTEGER;
+    C : CHAR;
+
+FUNCTION F(N : INTEGER) : INTEGER;
+  BEGIN
+    IF N = 0 THEN F := 1 ELSE F := N * F (N - 1);
+  END;
+
+BEGIN
+  C := 'A';
+  (* Lỗi: biểu thức + với ký tự *)
+  N := + C;
+  FOR N := 1 TO 7 DO
+    BEGIN
+      CALL WRITELN;
+      CALL WRITEI(F(N));
+    END;
+END.

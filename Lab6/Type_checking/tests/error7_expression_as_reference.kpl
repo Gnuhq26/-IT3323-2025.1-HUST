@@ -1,0 +1,15 @@
+PROGRAM ERROR7;
+(* Test case: Passing an expression as a reference parameter *)
+VAR X:INTEGER;  
+    Y:INTEGER;
+
+PROCEDURE REFPARAM(VAR N:INTEGER);
+BEGIN
+  N := N + 1
+END;
+
+BEGIN
+  X := 10;
+  Y := 20;
+  CALL REFPARAM(X + Y)  (* Error: cannot pass expression as reference parameter *)
+END.

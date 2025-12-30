@@ -1,0 +1,17 @@
+PROGRAM EXAMPLE6ERROR;
+(* Dựa trên Example6 - Kết hợp nhiều lỗi kiểu *)
+CONST C1 = 10;
+      C2 = -'a';
+TYPE T1 = ARRAY(. 10 .) OF INTEGER;
+VAR V1 : INTEGER;
+    V2 : ARRAY(. 10 .) OF T1;
+    V3 : CHAR;
+
+BEGIN
+  V1 := 100;
+  V3 := 'A';
+  (* Lỗi: gán char cho integer *)
+  V1 := V3;
+  (* Lỗi: truy cập mảng 3 chiều khi chỉ khai báo 2 chiều *)
+  V2(.1.)(.2.)(.3.) := 5;
+END.

@@ -1,0 +1,6 @@
+(* Test ERR_INVALID_CONSTANT - constant không hợp lệ *)
+Program Error6;
+Var c : Char;
+Begin
+  c := '';
+End.

@@ -1,0 +1,6 @@
+(* Test ERR_INVALIDFACTOR - factor không hợp lệ *)
+Program Error15;
+Var x : Integer;
+Begin
+  x := * 5;
+End.

@@ -1,0 +1,15 @@
+PROGRAM EXAMPLE5ERROR;
+(* Dựa trên Example5 - Lỗi: Không tương ứng kiểu trong lệnh gán *)
+CONST C = 1;
+TYPE T = CHAR;
+VAR V : CHAR;
+    N : INTEGER;
+
+BEGIN
+  V := 'A';
+  N := 10;
+  (* Lỗi: gán integer cho char *)
+  V := N;
+  (* Lỗi: gán char cho integer *)
+  N := V;
+END.

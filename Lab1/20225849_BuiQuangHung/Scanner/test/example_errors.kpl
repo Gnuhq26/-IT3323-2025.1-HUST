@@ -1,0 +1,11 @@
+Program ErrorTest;
+Var
+  (* This is a comment that never ends...
+  x : Integer;
+  verylongidentifiernamethatexceedsthemaximumlength : Integer;
+  c : Char;
+Begin
+  c := 'ab';  (* Invalid char constant - too long *)
+  x := 123;
+  @ := 5;  (* Invalid symbol *)
+End.

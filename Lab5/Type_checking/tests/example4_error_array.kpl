@@ -1,0 +1,15 @@
+PROGRAM EXAMPLE4ERROR;
+(* Dựa trên Example4 - Lỗi: Dùng sai số chiều mảng *)
+CONST MAX = 10;
+TYPE T = INTEGER;
+VAR A : ARRAY(. 10 .) OF T;
+    N : INTEGER;
+    I : INTEGER;
+
+BEGIN
+  N := 5;
+  I := 1;
+  (* Lỗi: truy cập mảng 2 chiều khi khai báo 1 chiều *)
+  A(.I.)(.2.) := 100;
+  N := A(.I.);
+END.

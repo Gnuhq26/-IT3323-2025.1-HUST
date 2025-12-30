@@ -1,0 +1,15 @@
+PROGRAM ERROR3;
+(* Test case: Formal parameter list has more elements than actual parameter list *)
+VAR X:INTEGER;  
+    Y:INTEGER;
+
+PROCEDURE THREEPARAMS(A:INTEGER; B:INTEGER; C:INTEGER);
+BEGIN
+  X := A + B + C
+END;
+
+BEGIN
+  X := 10;
+  Y := 20;
+  CALL THREEPARAMS(X, Y)  (* Error: procedure expects 3 parameters but only 2 arguments are provided *)
+END.

@@ -1,0 +1,13 @@
+PROGRAM ERROR2;
+(* Test case: Non-empty formal parameter list, empty actual parameter list *)
+VAR X:INTEGER;
+
+PROCEDURE WITHPARAMS(N:INTEGER);
+BEGIN
+  X := N
+END;
+
+BEGIN
+  X := 10;
+  CALL WITHPARAMS  (* Error: procedure expects 1 parameter but no arguments are provided *)
+END.

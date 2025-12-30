@@ -1,0 +1,17 @@
+PROGRAM EXAMPLE3ERROR;
+(* Dựa trên Example3 - Lỗi: Không tương ứng kiểu trong lệnh while *)
+VAR I : INTEGER;
+    N : INTEGER;
+    C : CHAR;
+
+BEGIN
+  N := 5;
+  C := 'X';
+  I := 0;
+  (* Lỗi: so sánh integer với char trong while *)
+  WHILE N = C DO
+    BEGIN
+      N := N - 1;
+      I := I + 1;
+    END
+END.

@@ -1,0 +1,6 @@
+(* Test ERR_INVALIDEXPRESSION - expression không hợp lệ *)
+Program Error13;
+Var x : Integer;
+Begin
+  x := Begin;
+End.

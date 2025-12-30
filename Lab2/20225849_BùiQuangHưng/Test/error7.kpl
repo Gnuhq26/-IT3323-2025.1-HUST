@@ -1,0 +1,5 @@
+(* Test ERR_INVALIDTYPE - kiểu dữ liệu không hợp lệ *)
+Program Error7;
+Var x : String;
+Begin
+End.

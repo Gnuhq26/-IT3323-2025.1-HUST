@@ -1,0 +1,5 @@
+(* Test ERR_NUMBER_TOO_LONG - số quá lớn *)
+Program Error3;
+Const c = 99999999999;
+Begin
+End.

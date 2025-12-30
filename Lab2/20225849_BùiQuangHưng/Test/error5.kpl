@@ -1,0 +1,6 @@
+(* Test ERR_INVALID_SYMBOL - ký tự không hợp lệ *)
+Program Error5;
+Var x : Integer;
+Begin
+  x := 10 @ 5;
+End.

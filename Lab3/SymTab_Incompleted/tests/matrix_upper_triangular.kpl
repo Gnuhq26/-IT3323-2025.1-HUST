@@ -1,0 +1,47 @@
+PROGRAM MATRIX;
+
+CONST MAXN = 10;
+
+VAR N : INTEGER;
+    I : INTEGER;
+    J : INTEGER;
+    A : ARRAY(. 10 .) OF ARRAY(. 10 .) OF INTEGER;
+    ISUPPER : INTEGER;
+
+PROCEDURE INPUT;
+VAR I : INTEGER;
+    J : INTEGER;
+BEGIN
+    FOR I := 1 TO N DO
+        FOR J := 1 TO N DO
+            A(.I.)(.J.) := READI
+END;
+
+FUNCTION CHECKUPPER : INTEGER;
+VAR I : INTEGER;
+    J : INTEGER;
+    RESULT : INTEGER;
+BEGIN
+    RESULT := 1;
+    FOR I := 1 TO N DO
+        FOR J := 1 TO N DO
+            IF I > J THEN
+                IF A(.I.)(.J.) != 0 THEN
+                    RESULT := 0;
+    CHECKUPPER := RESULT
+END;
+
+BEGIN
+    CALL WRITELN;
+    (* Nhap kich thuoc ma tran *)
+    N := READI;
+    
+    (* Nhap ma tran *)
+    CALL INPUT;
+    
+    (* Kiem tra va in ket qua *)
+    ISUPPER := CHECKUPPER;
+    CALL WRITELN;
+    CALL WRITEI(ISUPPER);
+    CALL WRITELN
+END.
