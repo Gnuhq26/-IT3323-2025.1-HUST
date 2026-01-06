@@ -1,0 +1,18 @@
+PROGRAM CODEGEN9;  
+TYPE T = INTEGER;
+VAR  S : T;
+     	I : INTEGER;
+    
+BEGIN
+	S:=0;
+	I:=1;
+  WHILE I<=5 DO
+BEGIN     
+S:=S+I*I;
+I:=I+1;
+END;
+CALL WRITEI(S);
+CALL WRITELN;
+END.
+
+

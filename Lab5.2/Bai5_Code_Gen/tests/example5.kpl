@@ -1,0 +1,20 @@
+PROGRAM  EXAMPLE4;  (* Example 4 *)
+TYPE T = INTEGER;
+VAR  A : ARRAY(. 10 .) OF T;
+     N : INTEGER;
+     CH : CHAR;
+	I : INTEGER;
+     SUM : INTEGER;
+BEGIN
+  N := READI;
+  FOR I := 1 TO N DO
+     A(.I.) := READI;
+  SUM := 0;
+  I := 1;
+  WHILE I <= N DO
+     BEGIN
+       SUM := SUM + A(.I.);
+       I := I + 1;
+     END;
+END.
+

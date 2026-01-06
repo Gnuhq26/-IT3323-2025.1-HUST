@@ -1,0 +1,17 @@
+PROGRAM  EXAMPLE4;  (* Example 4 *)
+TYPE T = INTEGER;
+VAR  A : ARRAY(. 10 .) OF T;
+     N : INTEGER;
+     	I : INTEGER;
+    
+BEGIN
+  N := READI;
+  FOR I := 1 TO N DO
+     A(.I.) := READI;
+  FOR I := 1 TO N DO
+     BEGIN
+       CALL WRITEI(A(.I.));
+       CALL WRITELN;
+     END
+END.
+
